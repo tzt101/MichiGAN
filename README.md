@@ -1,5 +1,3 @@
-[![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://raw.githubusercontent.com/nvlabs/SPADE/master/LICENSE.md)
-![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
 
 # MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing
 
@@ -8,7 +6,7 @@
 
 Clone this repo.
 ```bash
-git clone https://github.com/tzt101/HairSynthesisCode.git
+git clone https://github.com/tzt101/MichiGAN.git
 cd hairSynthesis/
 ```
 
@@ -17,7 +15,7 @@ This code requires PyTorch 1.0 and python 3+. Please install dependencies by
 pip install -r requirements.txt
 ```
 
-This code also requires the Synchronized-BatchNorm-PyTorch rep.
+If necessary, download the Synchronized-BatchNorm-PyTorch rep.
 ```
 cd models/networks/
 git clone https://github.com/vacancy/Synchronized-BatchNorm-PyTorch
@@ -41,13 +39,6 @@ Once the dataset is ready, the result images can be generated using pretrained m
     ```
 3. The outputs images are stored at `./inference_samples/` by default.
 
-## Interactive System
-
-If you want to generate images through interactive system, please run
-```bash
-python demo.py
-```
-
 ## Training New Models
 
 New models can be trained with the following command.
@@ -55,7 +46,7 @@ New models can be trained with the following command.
 ```bash
 python train.py --name [name_experiment] --batchSize 8 --no_confidence_loss --gpu_ids 0,1,2,3,4,5,6,7 --no_style_loss --no_rgb_loss --no_content_loss --use_encoder --wide_edge 2 --no_background_loss --noise_background --random_expand_mask --use_ig --load_size 568 --crop_size 512 --data_dir [pah_to_dataset] ----checkpoints_dir ./checkpoints
 ```
-`[name_experiment]` is the directory name of the checkpoint file saved. if you want to train the model with orientation inpainting model, please download the pretrained inpainting model from [Google Drive Folder](https://drive.google.com/open?id=1Vxilcb82ax1Zlwy9wqHRu5-DCJuZFc_C) and save them in `./checkpoints/[name_experiment]/` firstly.
+`[name_experiment]` is the directory name of the checkpoint file saved. if you want to train the model with orientation inpainting model (with the option --use_ig), please download the pretrained inpainting model from [Google Drive Folder](https://drive.google.com/open?id=1Vxilcb82ax1Zlwy9wqHRu5-DCJuZFc_C) and save them in `./checkpoints/[name_experiment]/` firstly.
 
 
 ## Code Structure
@@ -69,4 +60,4 @@ python train.py --name [name_experiment] --batchSize 8 --no_confidence_loss --gp
 
 
 ## Acknowledgments
-This code borrows heavily from SPADE. We thank Jiayuan Mao for his Synchronized Batch Normalization code.
+This code borrows heavily from [SPADE](https://github.com/NVlabs/SPADE.git). We thank Jiayuan Mao for his [Synchronized Batch Normalization](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch) code.
