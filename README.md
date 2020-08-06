@@ -25,7 +25,7 @@ cd ../../
 
 ## Dataset Preparation
 
-The FFHQ dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1jI0EThBSgVRB_bgPype8pg) with the extracted code `ichc`, you should specify the dataset root from through `--data_dir`.
+The FFHQ dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1jI0EThBSgVRB_bgPype8pg) with the extracted code `ichc` or [OneDrive](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES2Ig_Nmmh1Jglv_T1VJzBgBbbxgdAnjDVVhJU1SzqIugA), you should specify the dataset root from through `--data_dir`.
 
 ## Generating Images Using Pretrained Model
 
@@ -48,6 +48,9 @@ python train.py --name [name_experiment] --batchSize 8 --no_confidence_loss --gp
 ```
 `[name_experiment]` is the directory name of the checkpoint file saved. if you want to train the model with orientation inpainting model (with the option --use_ig), please download the pretrained inpainting model from [Google Drive Folder](https://drive.google.com/open?id=1Vxilcb82ax1Zlwy9wqHRu5-DCJuZFc_C) and save them in `./checkpoints/[name_experiment]/` firstly.
 
+## UI
+
+You can direct run demo.py to use the Interactive systems. This UI code borrows from [MaskGAN](https://github.com/switchablenorms/CelebAMask-HQ.git).
 
 ## Code Structure
 
