@@ -1,5 +1,12 @@
 
 # MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing
+![Teaser](data/teaser.jpg)
+###[Paper](https://mlchai.com/files/tan2020michigan.pdf)
+
+Zhentao Tan, [Menglei Chai](https://mlchai.com/), [Dongdong Chen](http://www.dongdongchen.bid/), [Jing Liao](https://liaojing.github.io/html/index.html), [Qi Chu](https://scholar.google.com/citations?user=JZjOMdsAAAAJ&hl=en), Lu Yuan, [Sergey Tulyakov](http://www.stulyakov.com/), [Nenghai Yu](https://scholar.google.com/citations?user=7620QAMAAAAJ&hl=zh-CN)
+
+## Abstract
+>Despite the recent success of face image generation with GANs, conditional hair editing remains challenging due to the under-explored complexity of its geometry and appearance. In this paper, we present MichiGAN (Multi-Input-Conditioned Hair Image GAN), a novel conditional image generation method for interactive portrait hair manipulation. To provide user control over every major hair visual factor, we explicitly disentangle hair into four orthogonal attributes, including shape, structure, appearance, and background. For each of them, we design a corresponding condition module to represent, process, and convert user inputs, and modulate the image generation pipeline in ways that respect the natures of different visual attributes. All these condition modules are integrated with the backbone generator to form the final end-to-end network, which allows fully-conditioned hair generation from multiple user inputs. Upon it, we also build an interactive portrait hair editing system that enables straightforward manipulation of hair by projecting intuitive and high-level user inputs such as painted masks, guiding strokes, or reference photos to well-defined condition representations. Through extensive experiments and evaluations, we demonstrate the superiority of our method regarding both result quality and user controllability.
 
 
 ## Installation
@@ -61,6 +68,20 @@ You can direct run demo.py to use the Interactive systems. This UI code borrows 
 - `options/`: creates option lists using `argparse` package. More individuals are dynamically added in other files as well. Please see the section below.
 - `data/`: defines the class for loading datas.
 
+## Citation
+If you use this code for your research, please cite our papers.
+```
+@article{tan2020michigan,
+  title={MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing},
+  author={Zhentao Tan, Menglei Chai, Dongdong Chen, Jing Liao, Qi Chu, Lu Yuan, Sergey Tulyakov and Nenghai Yu},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={39},
+  number={4},
+  pages={1--13},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+```
 
 ## Acknowledgments
 This code borrows heavily from [SPADE](https://github.com/NVlabs/SPADE.git). We thank Jiayuan Mao for his [Synchronized Batch Normalization](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch) code.
