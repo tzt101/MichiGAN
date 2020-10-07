@@ -59,6 +59,14 @@ python train.py --name [name_experiment] --batchSize 8 --no_confidence_loss --gp
 
 You can direct run demo.py to use the Interactive systems. This UI code borrows from [MaskGAN](https://github.com/switchablenorms/CelebAMask-HQ.git).
 
+## Orientation for New Dataset
+
+Once the image and the corresponding hair mask is provided, you can use the following command to extract dense hair orientaiton map.
+```bash
+    python cal_orientation.py --image_path [your image path] --hairmask_path [you hair mask path] --orientation_root [save root]
+```
+For ease of use, we have rewritten the original c++ code into python. The results of this code are slightly different from the C++ version, but does not affect usage.
+
 ## Code Structure
 
 - `train.py`, `inference.py`: the entry point for training and inferencing.
