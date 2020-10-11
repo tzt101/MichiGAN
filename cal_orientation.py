@@ -65,7 +65,7 @@ class orient(nn.Module):
             filterKernel = self.filter(self.kernel_size, self.channel_in, self.channel_out, theta)
             filterKernel = filterKernel.float()
             response = F.conv2d(image, filterKernel, stride=self.stride, padding=self.padding)
-            resArray.append(response.clone() / 510)
+            resArray.append(response.clone())
 
         resTensor = resArray[0]
         for iOrient in range(1, self.numKernels):
