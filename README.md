@@ -22,7 +22,7 @@ This code requires PyTorch 1.0 and python 3+. Please install dependencies by
 pip install -r requirements.txt
 ```
 
-If necessary, download the Synchronized-BatchNorm-PyTorch rep.
+Please download the Synchronized-BatchNorm-PyTorch rep.
 ```
 cd models/networks/
 git clone https://github.com/vacancy/Synchronized-BatchNorm-PyTorch
@@ -44,7 +44,7 @@ Once the dataset is ready, the result images can be generated using pretrained m
     ```bash
     python inference.py --name MichiGAN --gpu_ids 0 --inference_ref_name 67172 --inference_tag_name 67172 --inference_orient_name 67172 --netG spadeb --which_epoch 50 --use_encoder --noise_background --expand_mask_be --expand_th 5 --use_ig --load_size 512 --crop_size 512 --add_feat_zeros --data_dir [path_to_dataset]
     ```
-3. The outputs images are stored at `./inference_samples/` by default.
+3. The outputs images are stored at `./inference_samples/` by default. If you just want to test this single image without download the whole dataset, please set `--data_dir ./datasets/FFHQ_single/`. We give a sample image (67172) there.
 
 ## Training New Models
 
