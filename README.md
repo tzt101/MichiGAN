@@ -44,7 +44,7 @@ Once the dataset is ready, the result images can be generated using pretrained m
     ```bash
     python inference.py --name MichiGAN --gpu_ids 0 --inference_ref_name 67172 --inference_tag_name 67172 --inference_orient_name 67172 --netG spadeb --which_epoch 50 --use_encoder --noise_background --expand_mask_be --expand_th 5 --use_ig --load_size 512 --crop_size 512 --add_feat_zeros --data_dir [path_to_dataset]
     ```
-3. The outputs images are stored at `./inference_samples/` by default. If you just want to test this single image without download the whole dataset, please set `--data_dir ./datasets/FFHQ_single/`. We give a sample image (67172) there.
+3. The outputs images are stored at `./inference_samples/` by default. If you just want to test this single image without download the whole dataset, please set `--data_dir ./datasets/FFHQ_single/`. We give a sample image (67172) here.
 
 ## Training New Models
 
