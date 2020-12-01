@@ -32,7 +32,7 @@ cd ../../
 
 ## Dataset Preparation
 
-The FFHQ dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1jI0EThBSgVRB_bgPype8pg) with the extracted code `ichc` or [OneDrive (RAR)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES2Ig_Nmmh1Jglv_T1VJzBgBbbxgdAnjDVVhJU1SzqIugA) or [OneDrive (ZIP)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES_I8Z09JZVJocoFvo-1aKEB3Ah7uI9C56JuMPMZhpXNqQ?e=9n61Lx), you should specify the dataset root from through `--data_dir`. Please follow the [license] (https://github.com/NVlabs/ffhq-dataset) when you use the FFHQ dataset.
+The FFHQ dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1jI0EThBSgVRB_bgPype8pg) with the extracted code `ichc` or [OneDrive (RAR)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES2Ig_Nmmh1Jglv_T1VJzBgBbbxgdAnjDVVhJU1SzqIugA) or [OneDrive (ZIP)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES_I8Z09JZVJocoFvo-1aKEB3Ah7uI9C56JuMPMZhpXNqQ?e=9n61Lx), you should specify the dataset root from through `--data_dir`. Please follow the [license](https://github.com/NVlabs/ffhq-dataset) when you use the FFHQ dataset.
 
 ## Generating Images Using Pretrained Model
 
