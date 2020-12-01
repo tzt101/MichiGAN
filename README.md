@@ -32,13 +32,19 @@ cd ../../
 
 ## Dataset Preparation
 
-The FFHQ dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1jI0EThBSgVRB_bgPype8pg) with the extracted code `ichc` or [OneDrive (RAR)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES2Ig_Nmmh1Jglv_T1VJzBgBbbxgdAnjDVVhJU1SzqIugA) or [OneDrive (ZIP)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES_I8Z09JZVJocoFvo-1aKEB3Ah7uI9C56JuMPMZhpXNqQ?e=9n61Lx), you should specify the dataset root from through `--data_dir`.
+The FFHQ dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1jI0EThBSgVRB_bgPype8pg) with the extracted code `ichc` or [OneDrive (RAR)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES2Ig_Nmmh1Jglv_T1VJzBgBbbxgdAnjDVVhJU1SzqIugA) or [OneDrive (ZIP)](https://mailustceducn-my.sharepoint.com/:u:/g/personal/tzt_mail_ustc_edu_cn/ES_I8Z09JZVJocoFvo-1aKEB3Ah7uI9C56JuMPMZhpXNqQ?e=9n61Lx), you should specify the dataset root from through `--data_dir`. Please follow the [license] (https://github.com/NVlabs/ffhq-dataset) when you use the FFHQ dataset.
 
 ## Generating Images Using Pretrained Model
 
 Once the dataset is ready, the result images can be generated using pretrained models.
 
-1. Download the pretrained models from the [Google Drive Folder](https://drive.google.com/open?id=1Vxilcb82ax1Zlwy9wqHRu5-DCJuZFc_C), save it in 'checkpoints/MichiGAN/'
+1. Download the pretrained models from the [Google Drive Folder](https://drive.google.com/open?id=1Vxilcb82ax1Zlwy9wqHRu5-DCJuZFc_C), save it in 'checkpoints/MichiGAN/'. You can also download the pretrained models with the following commands:
+```bash
+cd checkpoints/MichiGAN/
+bash download_model_G.sh
+bash download_model_IG.sh
+bash download_model_SIG.sh
+```
 
 2. Generate single image using the pretrained model.
     ```bash
