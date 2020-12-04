@@ -14,7 +14,7 @@ Zhentao Tan, [Menglei Chai](https://mlchai.com/), [Dongdong Chen](http://www.don
 Clone this repo.
 ```bash
 git clone https://github.com/tzt101/MichiGAN.git
-cd hairSynthesis/
+cd MichiGAN/
 ```
 
 This code requires PyTorch 1.0 and python 3+. Please install dependencies by
