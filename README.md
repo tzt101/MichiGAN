@@ -1,7 +1,7 @@
 
 # MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing
 ![Teaser](data/teaser.jpg)
-###[Paper](https://mlchai.com/files/tan2020michigan.pdf)
+### [Paper](https://mlchai.com/files/tan2020michigan.pdf)
 
 Zhentao Tan, [Menglei Chai](https://mlchai.com/), [Dongdong Chen](http://www.dongdongchen.bid/), [Jing Liao](https://liaojing.github.io/html/index.html), [Qi Chu](https://scholar.google.com/citations?user=JZjOMdsAAAAJ&hl=en), Lu Yuan, [Sergey Tulyakov](http://www.stulyakov.com/), [Nenghai Yu](https://scholar.google.com/citations?user=7620QAMAAAAJ&hl=zh-CN)
 
